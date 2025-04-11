@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #2ba79d;
+  --background-color: #ece7e3;
+  --text-color: #231e1b;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer base {
+  h1 {
+    @apply text-[34px] font-bold;
+  }
+  h2 {
+    @apply text-[28px] font-semibold;
+  }
+  h3 {
+    @apply text-[22px] font-semibold;
+  }
+  h4 {
+    @apply text-[18px] font-medium;
+  }
+}
+
+@layer components {
+  .category-card {
+    @apply bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .category-icon-container {
+    @apply flex items-center justify-center w-12 h-12 bg-[#2BA79D]/10 rounded-full mb-2;
+  }
+
+  .category-icon {
+    @apply text-[#2BA79D];
+  }
+
+  .destination-card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-all;
+  }
+
+  .destination-image {
+    @apply relative h-48;
+  }
+
+  .destination-category {
+    @apply absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .destination-content {
+    @apply p-6;
+  }
+
+  .destination-title {
+    @apply text-xl font-semibold text-gray-800;
+  }
+
+  .destination-rating {
+    @apply flex items-center text-yellow-400;
+  }
+
+  .destination-location {
+    @apply flex items-center text-gray-500 mb-2;
+  }
+
+  .destination-description {
+    @apply text-gray-600 mb-4;
+  }
+
+  .destination-price {
+    @apply text-green-600 font-semibold;
+  }
+
+  .book-button {
+    @apply bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors;
+  }
+}
