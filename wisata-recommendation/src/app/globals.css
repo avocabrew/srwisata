@@ -5,9 +5,22 @@
 @tailwind utilities;
 
 :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 236, 231, 227;
+  --background-end-rgb: 236, 231, 227;
   --main-color: #2ba79d;
   --background-color: #ece7e3;
   --text-color: #231e1b;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 * {

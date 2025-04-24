@@ -1,25 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
-
-module.exports = withMT({
+module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,jsx}",
+    "./src/components/**/*.{js,jsx}",
+    "./src/app/**/*.{js,jsx}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: "#10B981",
-        secondary: "#1F2937",
-      },
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        primary: "#2BA79D",
+        secondary: "#231E1B",
+        background: "#ECE7E3",
       },
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light"],
-  },
-});
+  plugins: [],
+};

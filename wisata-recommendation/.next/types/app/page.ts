@@ -1,4 +1,4 @@
-// File: /Users/ekasurya/Desktop/3. Code/wisata-recommendation/src/app/page.tsx
+// File: /Users/ekasurya/Desktop/3. Code/wisata-recommendation/src/app/page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
